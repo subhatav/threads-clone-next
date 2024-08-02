@@ -1,0 +1,38 @@
+.vercel
+
+# Env Files #
+.env
+.env*.local
+
+# TypeScript Files #
+*.tsbuildinfo
+next-env.d.ts
+
+# Log Files #
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional Caches #
+/.npm/
+/.eslintcache/
+/.stylelintcache/
+
+# Dependencies #
+.pnp.js
+/.pnp
+/node_modules/
+
+# Next.js Builds #
+/.next/
+/out/
+
+# Testing Folder #
+/coverage/
+
+# Production Folder #
+/build/
+
+# VS Code Files #
+/.vscode/
+*.code-workspace
