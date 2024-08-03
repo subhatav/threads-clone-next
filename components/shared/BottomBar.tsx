@@ -1,0 +1,35 @@
+"use client";
+
+import { barLinks } from "@/constants";
+import { usePathname } from "next/navigation";
+
+import Image from "next/image";
+import Link from "next/link";
+
+export default function BottomBar() {
+
+  const pathname = usePathname();
+
+  return (
+    <section className="bottombar">
+      <div className="bottombar_container">
+        {barLinks.map(link => {
+          const isNestedUrl = pathname.includes(link.route) && link.route.length > 1;
+          const isPageActive = isNestedUrl || pathname === link.route;
+          return (
+            <Link href={link.route} key={link.label} className={
+              `bottombar_link ${isPageActive && "bg-primary-500"}`
+            }>
+              <Image src={link.imgUrl} alt={link.label}
+                width={16} height={16} className="object-contain"
+              />
+              <p className="text-subtle-medium text-light-1 max-sm:hidden">
+                {link.label.split(/\s+/)[0]}
+              </p>
+            </Link>
+          );
+        })}
+      </div>
+    </section>
+  );
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { sidebarLinks } from "@/constants";
+import { barLinks } from "@/constants";
 import { SignOutButton, SignedIn, useAuth } from "@clerk/nextjs";
 import { usePathname } from "next/navigation";
 
@@ -15,7 +15,7 @@ export default function LeftSideBar() {
   return (
     <section className="custom-scrollbar leftsidebar">
       <div className="flex w-full flex-1 flex-col gap-6 px-6">
-        {sidebarLinks.map(link => {
+        {barLinks.map(link => {
           const isNestedUrl = pathname.includes(link.route) && link.route.length > 1;
           const isPageActive = isNestedUrl || pathname === link.route;
           if (link.route === "/profile") link.route = `${link.route}/${userId}`;
