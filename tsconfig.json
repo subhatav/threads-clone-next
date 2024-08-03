@@ -13,6 +13,6 @@
   "include": [
     "next-env.d.ts", "**/*.ts",
     "**/*.tsx", ".next/types/**/*.ts"
-  ],
+, "app/page.adatsx"  ],
   "exclude": ["node_modules"]
 }
