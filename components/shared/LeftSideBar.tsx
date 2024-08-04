@@ -31,7 +31,7 @@ export default function LeftSideBar() {
       </div>
       <div className="mt-10 px-6">
         <SignedIn>
-          <SignOutButton redirectUrl="/sign-in">
+          <SignOutButton redirectUrl="/sign-up">
             <div className="flex cursor-pointer gap-4 p-4">
               <Image src="/assets/logout.svg"
                 alt="logout" width={24} height={24}
