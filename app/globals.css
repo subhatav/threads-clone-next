@@ -140,13 +140,13 @@
   @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
 }
 
-/* Account Profile  */
+/* Account Profile */
 .account-form_image-label {
-  @apply flex h-24 w-24 items-center justify-center rounded-full bg-dark-4 !important;
+  @apply flex size-24 items-center justify-center rounded-full cursor-pointer bg-dark-4 !important;
 }
 
 .account-form_image-input {
-  @apply cursor-pointer border-none bg-transparent outline-none file:text-blue !important;
+  @apply border-none bg-transparent outline-none file:text-blue file:hover:cursor-pointer !important;
 }
 
 .account-form_input {
