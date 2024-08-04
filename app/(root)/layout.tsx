@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { cn } from "@/lib/utils";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { Inter as FontSans } from "next/font/google";
@@ -27,10 +28,10 @@ export default function RootLayout(
   return (
     <ClerkProvider appearance={{ baseTheme: dark }}>
       <html lang="en" suppressHydrationWarning>
-        <body className={fontSans.variable}>
-        {/* <body className={cn(fontSans.variable,
+        {/* <body className={fontSans.variable}> */}
+        <body className={cn(fontSans.variable,
           "min-h-screen bg-background font-sans antialiased"
-        )}> */}
+        )}>
           <TopBar />
           <main className="flex flex-row">
             <LeftSideBar />

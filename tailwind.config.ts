@@ -43,7 +43,7 @@ const config: Config = {
         }
       ],
       "heading3-bold": [
-        "24px",
+        "26px",
         {
           lineHeight: "140%",
           fontWeight: "700"
