@@ -23,7 +23,6 @@ export default function RootLayout(
   return (
     <ClerkProvider appearance={{ baseTheme: dark }}>
       <html lang="en" suppressHydrationWarning>
-        {/* <body className={`${fontSans.className} bg-dark-1`}> */}
         <body className={`${cn(fontSans.variable,
           "min-h-screen bg-background font-sans antialiased"
         )} bg-dark-1`}>
